@@ -160,7 +160,7 @@ function main() {
   // Register function (event handler) to be called on a mouse press
   canvas.onmousedown = click;
   // and also while moving, if a button is pressed
-  canvas.onmousemove = function(ev) {if(ev.which == 1) {mouseCamera(ev);}};
+  canvas.onmousemove = function(ev) {if(ev.buttons == 1) {mouseCamera(ev);}};
 
   // Specify the color for clearing <canvas>
   gl.clearColor(0.0, 0.0, 0.0, 1.0);
